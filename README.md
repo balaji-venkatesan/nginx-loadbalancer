@@ -27,3 +27,9 @@
         }
 
   We are running 3 instances of the API server in a different port, and for load balancing, we have created an upstream and used the least connection as the algorithm.
+
+
+## TODO
+
+Move reactjs and nginx to parent directory, as of now it is inside the java project.
+   
