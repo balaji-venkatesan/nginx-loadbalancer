@@ -16,4 +16,14 @@
 
 # Nginx load balancing:
   
-  
+    upstream appserver {
+            # using least connection as the algorithm for loadbalancing, there are lot of loadbalaning algorithms available in nginx
+            # health check based loadbalaning is also supported
+            # TODO: change the localhost to ip address of the host
+            least_conn;
+            server 127.0.0.1:8080;
+            server 127.0.0.1:8082;
+            server 127.0.0.1:8083;
+        }
+
+  We are running 3 instances of the API server in a different port, and for load balancing, we have created an upstream and used the least connection as the algorithm.
