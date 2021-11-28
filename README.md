@@ -1,4 +1,5 @@
-#Nginx load balancing and reverse proxy:
+# Nginx load balancing and reverse proxy:
+
   This repo consists of a simple Spring boot application, Reactjs and Nginx webserver.
   
  - The Java backend is the API service that runs in 8080 port.
@@ -26,7 +27,11 @@
             server 127.0.0.1:8083;
         }
 
-  We are running 3 instances of the API server in a different port, and for load balancing, we have created an upstream and used the least connection as the algorithm.
+  - We are running 3 instances of the API server in a different port, and for load balancing, we have created an upstream and used the least connection as the algorithm.
+  - 1 instance of reactjs application
+  
+  <img width="1416" alt="Screenshot 2021-11-28 at 10 09 28 PM" src="https://user-images.githubusercontent.com/34711372/143777412-fdc41ef4-18e4-4450-a57f-d54dae9f1079.png">
+
 
 
 ## TODO
