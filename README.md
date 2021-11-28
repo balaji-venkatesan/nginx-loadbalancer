@@ -37,4 +37,5 @@
 ## TODO
 
 Move reactjs and nginx to parent directory, as of now it is inside the java project.
+Use docker compose.
    
